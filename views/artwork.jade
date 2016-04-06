@@ -1,0 +1,26 @@
+extends layout
+block content
+
+    // Wrapper
+    #wrapper.col-md-8
+
+        // USER LIST
+        h2.text-center Artwork List
+        h4.text-center *TIP: click on the table headers to sort the table		
+        #artworkList
+            table#artworkTable
+                thead
+                    th ID
+                    th Title
+                    th Image
+                    th Artist
+                    th Date
+                    th Medium
+                    th Link
+                tbody
+        // /USER LIST
+
+    // /WRAPPER
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='/javascripts/artworkGlobal.js')
+    script(src='/javascripts/jquery.tablesorter.js')

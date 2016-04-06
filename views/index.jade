@@ -1,0 +1,31 @@
+extends layout
+
+block content
+ .container.col-md-8
+      .header.clearfix
+        h3.text-muted.text-center Assignment One - Brian Walsh 
+      row
+        .jumbotron.col-md-12
+          h1.text-center Artists & Artwork of the TATE Museums
+          p.lead
+            | This website allows you to view details about artists and artwork with information gathered from the 
+            a(href='http://www.tate.org.uk/') TATE Museum's website
+      .row
+        .col-lg-6.text-center
+          h2 Artists
+          p Click the button to view a selection of Artists
+          br
+          div#artistRandom
+          br
+          br
+          a.btn.btn-lg.btn-success(href='/artist', role='button') View Artists
+        .col-lg-6.text-center
+          h2 Artworks
+          p Click the button to view a selection of Artworks
+          br
+          div#artworkRandom
+          br
+          br
+          a.btn.btn-lg.btn-success(href='/artwork', role='button') View Artworks
+ script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')		
+ script(src='/javascripts/home.js')

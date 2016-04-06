@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    body
+     .row	  
+       .navbar-collapse.collapse
+         ul.nav.navbar-nav
+           li
+               img(src='/images/logo.png', alt='logo', height='50', width='70')		   
+           li
+               a(href='/') Home
+           li
+               a(href='/artist') Artists
+           li
+               a(href='/artwork') Artwork
+    .row			   
+      block sidebar
+        .sidebar.col-md-2.leftSidebar
+            img(src='/images/self-portrait.jpg', alt='otto dix self portrait', title='otto dix self portrait', height='340', width='190')
+      block content
+      block sidebar2
+       .sidebar.col-md-2.rightSidebar
+          img(src='/images/tateartwork.jpg', alt='Wassily Kandinsky Swinging', title='Wassily Kandinsky Swinging', height='340', width='190')
+    br 
+    footer.footer
+            p 2016 Brian Walsh
+        block scripts		
+            script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+            script(src='/javascripts/jquery.tablesorter.js')

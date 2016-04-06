@@ -1,0 +1,24 @@
+extends layout
+block content
+
+    // Wrapper
+    #wrapper.col-md-8
+
+        // USER LIST
+        h2.text-center Artist List
+        h4.text-center *TIP: click on the table headers to sort the table
+        #artistList
+            table#artistTable
+                thead
+                    th ID
+                    th Artist
+                    th Gender
+                    th Year of Birth
+                    th Total Number of Works
+                    th TATE Page
+                tbody
+        // /USER LIST
+    // /WRAPPER
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='/javascripts/artistGlobal.js')
+    script(src='/javascripts/jquery.tablesorter.js')
